@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+          <!-- menú lado izquierdo -->
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="ropa.html">ROPA</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+          <!-- Logo en el centro -->
+          <div class="logo">
+            <img src="../Img/lomboklogo4.png" alt="Logo">
+          </div>
+          <!-- Barra de búsqueda a la derecha -->
+          <div class="search-bar">
+            <form action="#" method="GET">
+              <input type="text" name="search" placeholder="Buscar...">
+              <button type="submit">Buscar</button>
+            </form>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <h1>Contacto</h1>
+        <form action="procesar_formulario.php" method="POST" class="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <!-- Agrega los iconos de Font Awesome para las redes sociales aquí -->
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <!-- Puedes agregar más iconos según tus redes sociales -->
+        <p>&copy; 2023, Todos los derechos reservados</p>
+      </div>
+    </footer>
+    
+</body>
+</html>
