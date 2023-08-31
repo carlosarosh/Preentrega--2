@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+header {
+    position: fixed;
+    background-color: #f0f0f0;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .menu ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px;
+  }
+  
+  /* Estilos para el logo */
+  .logo {
+    flex: 1;
+    text-align: center;
+
+  }
+  
+  .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  /* Estilos para la barra de búsqueda */
+  .search-bar {
+    flex: 1;
+    text-align: right;
+    margin-right: 40px; /* Ajusta este valor para correr la barra de búsqueda hacia la izquierda */
+  }
+  
+  .search-bar form {
+    display: inline-block;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+/* Estilos para el menú cuando el ancho de la pantalla sea menor o igual a 768px */
+@media screen and (max-width: 768px) {
+    .menu {
+      flex-direction: column; /* Cambiamos a column para que los elementos se apilen verticalmente */
+      align-items: center;
+    }
+
+    .logo {
+      order: 1; /* Cambiamos el orden para que aparezca primero */
+    }
+  
+    .menu ul {
+      order: 2; /* Cambiamos el orden para que aparezca después del logo */
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .search-bar {
+      order: 3; /* Cambiamos el orden para que aparezca después de las opciones del menú */
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .banner {
+        margin-top: 220px;
+    }
+}
+    
+  
+
+
+  .banner {
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 20px 0; /* Ajusta el espaciado interno del banner según tus preferencias */
+  }
+  
+  /* Estilo de la imagen del banner */
+  .banner img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen para que se ajuste al ancho del banner */
+    height: auto; /* Asegura que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+  }
+
+/* Estilos para el contenedor del video */
+.video-container {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  width: 100%; /* Opcional: ajusta el ancho del contenedor del video */
+  max-width: 800px; /* Ajusta el ancho máximo del video según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Opcional: agrega un espacio interno alrededor del video */
+}
+
+/* Estilo del video dentro del contenedor */
+.video-container iframe {
+  /* Ajusta el tamaño del video según tus necesidades */
+  width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+  height: 400px; /* Ajusta la altura del video según tus necesidades */
+}
+
+
+.site-footer {
+  background-color: #333; /* Cambia el color de fondo como desees */
+  color: #fff; /* Cambia el color del texto como desees */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icon {
+  color: #fff; /* Cambia el color del icono como desees */
+  font-size: 24px;
+  margin: 0 5px; /* Espacio entre los iconos */
+}
+
+/* Cambia el color de los íconos al pasar el ratón por encima */
+.social-icon:hover {
+  color: #f00; /* Cambia el color al pasar el ratón por encima */
+}
+
+main {
+  margin-top: 130px; /* Ajusta el margen superior para colocar el formulario más abajo */
+margin-bottom: 80px;
+text-align: center;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+}
+
+.contact-form label, 
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* Cambiar a una fila en dispositivos más pequeños */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna en dispositivos móviles */
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual ancho */
+  gap: 20px; /* Espacio entre los elementos */
+  padding: 20px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
